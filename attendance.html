@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="attendance.css">
+    <title>Pay Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Employee Pay Calculator</h1>
+
+        <label for="employeeName">Employee Name:</label>
+        <input type="text" id="employeeName" placeholder="Enter employee name">
+
+        <label for="daysWorked">Days Worked:</label>
+        <input type="number" id="daysWorked" placeholder="Enter number of days worked">
+
+        <label for="clockIn">Clock In Time:</label>
+        <input type="time" id="clockIn">
+
+        <label for="clockOut">Clock Out Time:</label>
+        <input type="time" id="clockOut">
+
+        <button onclick="calculatePay()">Calculate Pay</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="attendance.js"></script>
+</body>
+</html>
